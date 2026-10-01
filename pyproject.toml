@@ -1,0 +1,22 @@
+[project]
+name = "langgraph-basics"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Suyash", email = "suyashrusia2005@gmail.com" }
+]
+requires-python = ">=3.13"
+dependencies = [
+    "ipykernel>=7.4.0",
+    "langchain>=1.4.3",
+    "langgraph>=1.2.12",
+    "langsmith>=0.14.2",
+]
+
+[project.scripts]
+langgraph-basics = "langgraph_basics:main"
+
+[build-system]
+requires = ["uv_build>=0.12.20,<0.13.0"]
+build-backend = "uv_build"
